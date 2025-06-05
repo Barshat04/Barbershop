@@ -4,6 +4,9 @@ body {
   font-family: Poppins, sans-serif, Arial, Helvetica;
   font-size: 1em;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .inner-wrap {
   display: flex;
@@ -32,7 +35,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: red;
+  color: #ffb84b;
 }
 
 section {
@@ -59,7 +62,11 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity here */
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,16 +248,44 @@ section {
 }
 
 .details {
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.location,
+.location {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .contact {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.location-info,
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-tagline {
+  display: flex;
+}
+
+.social {
+  display: flex;
+  gap: 5px;
 }
 
 .location img,
@@ -264,13 +299,14 @@ section {
 
 .location h3,
 .contact h3 {
+  margin: 0 !important;
   font-size: 1.2rem;
-  margin-bottom: 5px;
   font-weight: bold;
 }
 
 .location p,
 .contact p {
+  margin: 0 !important;
   font-size: 1rem;
   line-height: 1.5;
   color: #ddd;
@@ -419,9 +455,8 @@ footer a {
   color: #ffb84b;
 }
 
-footer .contact {
-  display: flex;
-  justify-content: center;
+footer p {
+  margin: 5px !important;
 }
 
 /* Responsive Styles */
@@ -481,6 +516,15 @@ footer .contact {
 
 @media (max-width: 576px) {
   /* Mobile header adjustments */
+  p {
+    font-size: 0.85rem !important;
+  }
+  h1 {
+    font-size: 22px !important;
+  }
+  h2 {
+    font-size: 18px !important;
+  }
 
   .inner-wrap {
     padding: 10px;
@@ -515,6 +559,21 @@ footer .contact {
   }
 
   .info {
+    flex-direction: column;
+  }
+
+  .details h3,
+  p {
+    margin: 0;
+  }
+
+  .contact {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .location-info,
+  .contact-info {
+    display: flex;
     flex-direction: column;
   }
 
@@ -566,8 +625,10 @@ footer .contact {
   }
   .prices h1 {
     font-size: 2.1rem;
+    margin-bottom: 10px;
   }
   .price-list {
+    font-size: 1rem;
     width: 100%;
   }
 
@@ -580,5 +641,11 @@ footer .contact {
   }
   #team h1 {
     font-size: 2.1rem;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
