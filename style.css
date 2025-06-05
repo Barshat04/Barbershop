@@ -157,8 +157,16 @@ section {
   background-color: #00bfa5;
   color: #fff;
 }
+
+#hamburger {
+  display: none;
+}
+
 .menubar {
   display: none;
+}
+.menubar.active {
+  display: flex;
 }
 
 /*Service section second page
@@ -389,6 +397,19 @@ section {
   margin: auto;
 }
 
+#team i {
+  color: #d48814;
+  cursor: pointer;
+}
+
+#team .card:hover {
+  transform: translateY(-10px);
+}
+
+#team .card {
+  transition: transform 0.3s ease;
+}
+
 .profile-cards {
   margin-top: 50px;
   display: flex;
@@ -444,6 +465,7 @@ section {
 
 footer {
   padding-top: 20px;
+  padding-bottom: 10px;
   color: #fff;
   text-align: center;
   width: 100%;
@@ -463,16 +485,23 @@ footer p {
 @media (max-width: 768px) {
   /* Tablet and mobile header styles */
   .inner-wrap {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 20px 5px 20px;
   }
 
   nav ul {
     flex-direction: column;
     gap: 20px;
   }
+  .menubar ul li,
+  a {
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+  }
 
-  .hamburger {
+  #hamburger {
     display: block;
     cursor: pointer;
   }
@@ -481,7 +510,7 @@ footer p {
     display: none;
   }
 
-  .hamburger.active + ul {
+  #hamburger.active + ul {
     display: flex;
   }
 
@@ -526,8 +555,41 @@ footer p {
     font-size: 18px !important;
   }
 
+  #hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: none;
+  }
+  .menubar ul {
+    padding-left: 20px !important;
+  }
+
+  .menubar ul li,
+  a {
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .menuar a:active {
+    color: #ffb84b;
+  }
+
+  .menuar a:visited {
+    color: #ffb84b;
+  }
+
+  #hamburger.active + ul {
+    display: flex;
+  }
+
   .inner-wrap {
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 20px 5px 20px;
   }
 
   nav ul {

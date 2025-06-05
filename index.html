@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sharps Barber</title>
+    <title>Barbershop</title>
     
     
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <!--fontawesome cdn-->
+    <script src="https://kit.fontawesome.com/7a2fd8fbc2.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <div class="inner-wrap">
         <div class="brand">
-          <h2 class="logo">Sharps <span class="yellow-span">Barber</span></h2>
+          <h2 class="logo">New<span class="yellow-span">Barbershop</span></h2>
         </div>
         <nav>
           <ul>
@@ -22,10 +24,8 @@
             <!-- <li><a href="#location">Location</a></li> -->
             <li><a href="#team">About</a></li>
           </ul>
-          <div class="hamburger" onclick="onclick()">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+          <div id="hamburger">
+            <i class="fa-solid fa-bars"></i>
           </div>
         </nav>
       </div>
@@ -33,15 +33,14 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="#our-work">Services</a></li>
-          <li><a href="#location">Location</a></li>
           <li><a href="#team">About</a></li>
         </ul>
       </div>
     </header>
     <section id="hero">
       <div class="overlay">
-        <h1 class="hero-heading">Welcome to Sharps Barbershop.</h1>
-        <h2 class="location">Drayton, Toowoomba, QLD, 4350</h2>
+        <h1 class="hero-heading">Welcome to New Barbershop.</h1>
+        <h2 class="location"><i class="fa-solid fa-location-dot"></i>Anywhere city, Toowoomba, QLD, 4350</h2>
         <button type="button" class="btn"><a href="#our-work">View Pricing</a></button>
       </div>
     </section>
@@ -144,8 +143,8 @@
                 <h3>John Smith</h3>
                 <p>Master Barber</p>
                 <div class="icons">
-                    <img src="icon1.png" alt="Social Icon 1">
-                    <img src="icon2.png" alt="Social Icon 2">
+                    <i class="fa-brands fa-facebook"></i>
+                   <i class="fa-brands fa-square-instagram"></i>
                 </div>
             </div>
         </div>
@@ -155,8 +154,8 @@
                 <h3>Sarah Johnson</h3>
                 <p>Senior Stylist</p>
                 <div class="icons">
-                    <img src="icon1.png" alt="Social Icon 1">
-                    <img src="icon2.png" alt="Social Icon 2">
+                    <i class="fa-brands fa-facebook"></i>
+                   <i class="fa-brands fa-square-instagram"></i>
                 </div>
             </div>
         </div>
@@ -166,8 +165,8 @@
                 <h3>Mike Davis</h3>
                 <p>Barber</p>
                 <div class="icons">
-                    <img src="icon1.png" alt="Social Icon 1">
-                    <img src="icon2.png" alt="Social Icon 2">
+                    <i class="fa-brands fa-facebook"></i>
+                   <i class="fa-brands fa-square-instagram"></i>
                 </div>
             </div>
         </div>
