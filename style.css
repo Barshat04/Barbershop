@@ -543,6 +543,52 @@ footer p {
   }
 }
 
+@media (max-width: 1440px) {
+  /*laptops*/
+  .hero-heading {
+    font-size: 2.6rem;
+  }
+  .location {
+    font-size: 1.1rem;
+  }
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .container p {
+    font-size: 0.9rem;
+  }
+  .info {
+    display: block;
+  }
+  .slider {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .container-2 h1 {
+    font-size: 2rem;
+  }
+
+  .prices h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+  .price-list {
+    font-size: 1rem;
+  }
+
+  #team h1 {
+    font-size: 2rem;
+  }
+
+  #team p {
+    max-width: 80%;
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 576px) {
   /* Mobile header adjustments */
   p {
@@ -602,7 +648,7 @@ footer p {
   }
   /* Adjust hero heading size for small screens */
   .hero-heading {
-    font-size: 2.5rem;
+    font-size: 1.5rem !important;
     animation: none;
     width: 100%;
     border: none;
@@ -610,14 +656,14 @@ footer p {
   }
 
   .location {
-    font-size: 1rem;
+    font-size: 0.75rem !important;
+    gap: 10px;
   }
 
   /* Responsive button */
   .btn {
-    width: 100%;
-    padding: 15px;
-    font-size: 1rem;
+    padding: 10px;
+    font-size: 0.8rem;
   }
 
   .info {
